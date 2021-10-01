@@ -16,5 +16,5 @@ for i in range(w):
         background.putpixel((i, j), color)
 
 avatar.paste(background, (0, 0), background)
-avatar.save("national_avatar.png")
+avatar.save("your_custom_avatar.png")
 print("new avatar is generate!")
