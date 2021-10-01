@@ -1,7 +1,7 @@
 from PIL import Image
 
-avatar = Image.open("test.jpeg")
-background = Image.open("national_flag.png")
+avatar = Image.open("you_avatar")
+background = Image.open("your_background")
 
 w, h = avatar.size
 background = background.resize((w, h))
