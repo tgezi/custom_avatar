@@ -1,7 +1,8 @@
 from PIL import Image
+import settings
 
-avatar = Image.open("you_avatar")
-background = Image.open("your_background")
+avatar = settings.avatar
+background = settings.bg
 
 w, h = avatar.size
 background = background.resize((w, h))
@@ -16,5 +17,5 @@ for i in range(w):
         background.putpixel((i, j), color)
 
 avatar.paste(background, (0, 0), background)
-avatar.save("your_custom_avatar.png")
+avatar.save(settings.res)
 print("new avatar is generate!")
